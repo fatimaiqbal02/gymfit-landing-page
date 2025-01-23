@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymFit</title>
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- slider cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!----------------------------- header section -------------------------------------->
+    <header>
+
+        <div id="menu-bar" class="fa-solid fa-bars"></div>
+
+        <a href="#" class="logo"><span>G</span>ymfit</a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#book">book</a>
+            <a href="#packages">packages</a>
+            <a href="#services">services</a>
+            <a href="#gallery">gallery</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fa-solid fa-search" id="search-btn"></i>
+            <i class="fa-solid fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fa-solid fa-search"></label>
+        </form>
+
+    </header>
+    <!------------------X---------- header section -----------X-------------------------->
+    <!----------------------------- Login section -------------------------------------->       
+    <div class="login-form-container">
+
+        <i class="fa-solid fa-times" id="form-close"></i>
+
+        <form action="">
+            <h3>Login</h3>
+            <input type="email" class="box" placeholder="enter your email">
+            <input type="password" class="box" placeholder="enter your password">
+            <input type="submit" value="login now" class="btn submitBtn">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember me</label>
+            <p>forget password? <a href="#">click here</a></p>
+            <p>don't have an account? <a href="#">register now</a></p>
+        </form>
+
+    </div>
+    <!--------------------X---------- Login Section -----------X----------------------->
+    <!---------------------------------Home Section ----------------------------------->
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>Redefine your limits</h3>
+            <p>Join our community and achieve your goals together</p>
+            <a href="#" class="btn">Discover More</a>
+        </div>
+
+        <div class="controls">
+            <span class="vid-btn active" data-src="images/vid-1.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-2.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-3.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-4.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-5.mp4"></span>
+        </div>
+
+        <div class="video-container">
+            <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+
+    </section>
+    <!--------------------X----------- Home Section -----------X----------------------->
+    <!-------------------------------- Book Section ----------------------------------->
+    <section class="book" id="book">
+
+        <h1 class="heading">
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+        
+        <div class="row">
+            <div class="image">
+                <img src="images/bookImg.png" alt="" srcset="">
+            </div>
+
+            <form action="">
+                <div class="inputBox">
+                    <h3>Name</h3>
+                    <input type="text" placeholder="enter your name">
+                </div>
+                <div class="inputBox">
+                    <h3>Email</h3>
+                    <input type="text" placeholder="enter your email">
+                </div>
+                <div class="inputBox">
+                    <h3>Phone Number</h3>
+                    <input type="text" placeholder="enter your phone no">
+                </div>
+                <div class="inputBox">
+                    <h3>Date</h3>
+                    <input type="date">
+                </div>
+                <input type="submit" class="btn" value="book now">
+            </form>
+        </div>
+
+    </section>
+    <!--------------------X----------- Book Section -----------X----------------------->
+    <!-------------------------------- Packages Section ----------------------------------->
+    <section class="packages" id="packages">
+
+        <h1 class="heading">
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/p-1.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-dumbbell"></i>Basic Access</h3>
+                    <p>Budget-friendly gym floor access for cardio and weights.</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> Rs. 4,275 <span>Rs.5,700</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-2.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-dumbbell"></i>Standard Membership</h3>
+                    <p>Full gym access and limited group fitness classes.</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> Rs.9,795 <span>Rs.12,825</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-3.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-dumbbell"></i>Premium Membership</h3>
+                    <p>Unlimited everything - gym, classes, and exclusive perks.</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> Rs.18,800 <span>Rs.22,800</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-4.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-dumbbell"></i>Class Pack</h3>
+                    <p>Focused on group fitness with a set number of classes.</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> Rs.17,200 <span>Rs.21,375</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-5.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-dumbbell"></i>Personal Training Package</h3>
+                    <p>Achieve your goals with personalized training and guidance.</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> Rs.12,000 <span>Rs.19,950</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-6.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-dumbbell"></i>Visitor Pass</h3>
+                    <p>Flexible access for a day, week, or short visit.</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> Rs.2,765 <span>Rs.4,275</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!--------------------X----------- Packages Section -----------X----------------------->
+    <!-------------------------------- Services Section ----------------------------------->
+    <section class="services" id="services">
+
+        <h1 class="heading">
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fa-solid fa-hotel"></i>
+                <h3>On-Site Cafe</h3>
+                <p>Enjoy fresh juices, healthy snacks, and coffee before or after your workout. Our cafe offers a convenient and social space to refuel and connect.</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-utensils"></i>
+                <h3>Snacks & Drinks</h3>
+                <p>Grab a healthy snack or refreshing drink to keep you energized throughout your workout. We offer a selection of healthy options to support your fitness goals.</p>   
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-bullhorn"></i>
+                <h3>Lockers & Rooms</h3>
+                <p>Secure lockers and clean, comfortable changing rooms for your convenience. Store your belongings safely and get ready for your workout in a comfortable environment.</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-wifi"></i>
+                <h3>24 hrs Wi-Fi</h3>
+                <p>Stay connected while you work out with our free and fast Wi-Fi. Stream your favorite music, track your progress, or stay in touch with friends.</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-dumbbell"></i>
+                <h3>Towel Service</h3>
+                <p>Enjoy a fresh, clean towel after your workout. We provide complimentary towel service for your convenience.</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-car"></i>
+                <h3>Parking</h3>
+                <p>Convenient and ample parking available for members. Enjoy hassle-free access to the gym with our dedicated parking facilities.</p>
+            </div>
+
+        </div>
+
+    </section>
+    <!--------------------X----------- Services Section -----------X----------------------->
+    <!-------------------------------- Gallery Section ----------------------------------->
+    <section class="gallery" id="gallery">
+
+        <h1 class="heading">
+            <span>g</span>
+            <span>a</span>
+            <span>l</span>
+            <span>l</span>
+            <span>e</span>
+            <span>r</span>
+            <span>y</span>
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/g-1.jpg" alt="">
+                <div class="content">
+                    <h3>Our Gallery</h3>
+                    <p>Discover images of our gym and get inspired.</p>
+                    <a href="#" class="btn">See more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-2.jpg" alt="">
+                <div class="content">
+                    <h3>Our Gallery</h3>
+                    <p>Discover images of our gym and get inspired.</p>
+                    <a href="#" class="btn">See more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-3.jpg" alt="">
+                <div class="content">
+                    <h3>Our Gallery</h3>
+                    <p>Discover images of our gym and get inspired.</p>
+                    <a href="#" class="btn">See more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-4.jpg" alt="">
+                <div class="content">
+                    <h3>Our Gallery</h3>
+                    <p>Discover images of our gym and get inspired.</p>
+                    <a href="#" class="btn">See more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-5.jpg" alt="">
+                <div class="content">
+                    <h3>Our Gallery</h3>
+                    <p>Discover images of our gym and get inspired.</p>
+                    <a href="#" class="btn">See more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-6.jpg" alt="">
+                <div class="content">
+                    <h3>Our Gallery</h3>
+                    <p>Discover images of our gym and get inspired.</p>
+                    <a href="#" class="btn">See more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-7.jpg" alt="">
+                <div class="content">
+                    <h3>Our Gallery</h3>
+                    <p>Discover images of our gym and get inspired.</p>
+                    <a href="#" class="btn">See more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-8.jpg" alt="">
+                <div class="content">
+                    <h3>Our Gallery</h3>
+                    <p>Discover images of our gym and get inspired.</p>
+                    <a href="#" class="btn">See more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-9.jpg" alt="">
+                <div class="content">
+                    <h3>Our Gallery</h3>
+                    <p>Discover images of our gym and get inspired.</p>
+                    <a href="#" class="btn">See more</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!--------------------X----------- Gallery Section -----------X----------------------->
+    <!-------------------------------- Review Section ----------------------------------->
+    <section class="review" id="review">
+
+        <h1 class="heading">
+            <span>r</span>
+            <span>e</span>
+            <span>v</span>
+            <span>i</span>
+            <span>e</span>
+            <span>w</span>
+        </h1>
+
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/pic1.jpg" alt="">
+                        <h3>Saim Shahid</h3>
+                        <p>I've been going to this gym for six months now, and I've seen incredible results. The trainers are fantastic - they're knowledgeable, motivating, and really care about helping you achieve your goals.</p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/pic2.jpg" alt="">
+                        <h3>Ali Ahmed</h3>
+                        <p>This gym has everything you could need! The equipment is top-notch and always well-maintained. I'm especially impressed with how clean everything is - the staff does a great job of keeping the place spotless.</p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/pic3.jpg" alt="">
+                        <h3>Sara Raza</h3>
+                        <p>I joined this gym primarily for the group fitness classes, and I'm so glad I did! The instructors are amazing, and the classes are a great workout. But what I love most is the sense of community. I highly recommend this gym </p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/pic4.jpg" alt="">
+                        <h3>Ali Khan</h3>
+                        <p>I've tried a few different gyms in the area, and this one offers the best value for the price. The membership fees are reasonable, and they have everything I need for a good workout. The location is super convenient.</p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    
+    <!--------------------X----------- Review Section -----------X----------------------->
+    <!-------------------------------- Contact Section ---------------------------------->
+    <section class="contact" id="contact">
+
+        <h1 class="heading">
+            <span>c</span>
+            <span>o</span>
+            <span>n</span>
+            <span>t</span>
+            <span>a</span>
+            <span>c</span>
+            <span>t</span>
+        </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/contactImg.png" alt="">
+            </div>
+            <form action="">
+
+                <div class="inputBox">
+                    <input type="text" placeholder="name">
+                    <input type="email" placeholder="email">
+                </div>
+                <div class="inputBox">
+                    <input type="number" placeholder="number">
+                    <input type="text" placeholder="subject">
+                </div>
+                <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+                <input type="submit" class="btn" value="send message">
+            </form>
+        </div>
+
+    </section>
+    <!--------------------X----------- Contact Section -----------X-------------------->
+    <!-------------------------------- Brand Section ---------------------------------->
+    <section class="brand" id="brand">
+        <div class="swiper brand-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide"><img src="images/1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/4.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/5.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/6.jpg" alt=""></div>
+
+            </div>
+        </div>
+    </section>
+    <!--------------------X----------- Brand Section -----------X---------------------->
+    <!-------------------------------- Footer Section --------------------------------->
+    <footer>
+        <div class="box-container">
+
+            <div class="box">
+                <h3>About us</h3>
+                <p>We're more than just a gym; we're a community. At GymFit, we're passionate about helping our members achieve their fitness goals in a supportive and motivating environment.</p>
+            </div>
+            <div class="box">
+                <h3>Branches</h3>
+                <a href="#">Lahore</a>
+                <a href="#">Karachi</a>
+                <a href="#">Islamabad</a>
+                <a href="#">Peshawar</a>
+            </div>
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#">home</a>
+                <a href="#">book</a>
+                <a href="#">packages</a>
+                <a href="#">services</a>
+                <a href="#">gallery</a>
+                <a href="#">review</a>
+                <a href="#">contact</a>         
+            </div>
+            <div class="box">
+                <h3>Follow us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">Linkedin</a>
+            </div>
+
+        </div>
+        <h1 class="credit"> created by <span>fatima iqbal mirza</span> | all rights reserved!</h1>
+    </footer>
+    <!--------------------X----------- Footer Section -----------X--------------------->
+   
+
+
+
+    <!-- slider cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- custom js file link -->
+    <script src="js/script.js"></script>
+</body>
+</html>
